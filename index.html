@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Background Remover</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+
+        <div class="logo">BG Remover</div>
+
+        <a href="#" class="nav-link">Home</a>
+
+    </nav>
+
+
+    <!-- Main Section -->
+    <main class="container">
+
+        <div class="heading">
+
+            <h1>Remove Image Background</h1>
+
+            <p>Remove image backgrounds automatically in seconds.</p>
+
+        </div>
+
+
+        <!-- Upload Box -->
+        <div class="upload-box" id="uploadBox">
+
+            <div class="upload-icon">↑</div>
+
+            <h2>Upload Your Image</h2>
+
+            <p>Drag and drop your image here or browse files</p>
+
+            <input
+                type="file"
+                id="imageInput"
+                accept="image/png, image/jpeg, image/webp"
+                hidden
+            >
+
+            <button class="upload-btn" id="uploadBtn">
+                Choose Image
+            </button>
+
+            <small>Supports JPG, PNG and WEBP</small>
+
+        </div>
+
+
+        <!-- Image Preview -->
+        <div class="preview-section" id="previewSection">
+
+            <h2>Image Preview</h2>
+
+            <div class="image-container">
+
+                <div>
+                    <h3>Original Image</h3>
+                    <img id="originalImage" alt="Original image preview">
+                </div>
+
+                <div>
+                    <h3>Result Image</h3>
+                    <img id="resultImage" alt="Background removed image">
+                </div>
+
+            </div>
+
+
+            <!-- Action Buttons -->
+            <div class="actions">
+
+                <button class="remove-btn" id="removeBtn">
+                    Remove Background
+                </button>
+
+                <a
+                    id="downloadBtn"
+                    class="download-btn"
+                    hidden
+                    download="background-removed.png"
+                >
+                    Download Image
+                </a>
+
+            </div>
+
+            <p id="status"></p>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 BG Remover. All rights reserved.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
